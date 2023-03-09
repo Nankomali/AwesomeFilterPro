@@ -6,6 +6,6 @@ RUN pip install -r requirements.txt
 
 COPY  requirements.txt /requirements.txt
 
-WORKDIR /Sam
+WORKDIR /Awesomefilterpro
 
 CMD ["python3", "bot.py"]
