@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /nayanFilterbot
-WORKDIR /natayanFilterbot
+RUN mkdir /AwesomeFilterPro
+WORKDIR /AwesomeFilterPro
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
