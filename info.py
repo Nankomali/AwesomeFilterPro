@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ('API_ID','15558236'))
 API_HASH = environ('API_HASH','7a1b9c84bda6e13d4cb2cb05b4fec88d'))
-BOT_TOKEN = environ('BOT_TOKEN', '5564306246:AAG8bt-aXDL7VkbAj7dmP6K0gY9rUIhgG2c'))
+BOT_TOKEN = environ('BOT_TOKEN', '5469511581:AAFp8nZ5CAXQLdsS5ALCZfykfKvkMsivUng'))
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -69,6 +69,6 @@ AUTO_DELETE = environ.get('AUTO_DELETE', True)
 if AUTO_DELETE == "True":
     AUTO_DELETE = True
 
-URL_SHORTNER_WEBSITE = environ.get('URL_SHORTNER_WEBSITE', 'shorturllink.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '822f0c9fe3315d785d8edca2bbe2ae4de54eaa3f')
+URL_SHORTNER_WEBSITE = environ.get('URL_SHORTNER_WEBSITE', 'tnshort.net')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '032dafc6b95429215e26d6a5b68d2fd8e54568b0')
 
