@@ -1,11 +1,12 @@
-FROM python:3.10
+FROM python:3.10.8-slim-buster
 
-COPY  requirements.txt /requirements.txt
+RUN apt update && apt upgrade -y
+RUN apt install git -y
+COPY requirements.txt /requirements.txt
 
-RUN pip install -r requirements.txt
-
-COPY  requirements.txt /requirements.txt
-
-WORKDIR /Awesomefilterpro
-
-CMD ["python3", "bot.py"]
+RUN cd /
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+RUN mkdir /nayanFilterbot
+WORKDIR /natayanFilterbot
+COPY start.sh /start.sh
+CMD ["/bin/bash", "/start.sh"]
